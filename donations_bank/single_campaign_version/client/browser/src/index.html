@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+
+      <h1>The Toapayoh Bank of Donations - Settings Setup:</h1>    
+
+      <aside>
+        <p id="status"> 💸 Please, connect to the Sollet wallet... </p>
+      </aside>
+
+          <h2>Sollet</h2>
+          <button id="sollet" type="button" class="ripple" onclick="main.connectSolletWallet()">connect wallet</button>
+          <button id="setup" type="button" class="ripple" disabled onclick="main.setupSettings()">UPLOAD SETTINGS TO BLOCKCHAIN</button>
+
+          <section>
+            <h2>Donation Address (Address of the Bank)</h2>
+            <form>
+              <input  id="creator"    type="text"   autocomplete="off" disabled placeholder="Solana address"><span>→(check)</span>
+            </form>
+          </section>
+      
+          <section>
+            <h2>Creator's Fee Address</h2>
+            <form>
+              <input  id="creator_fee_address" type="text"   autocomplete="off" disabled placeholder="Solana address" value="9C8ARBpAqcmoDfqZTDtvB1JgZC7gjvcq48xRJoR7Wpeq"><span>→(check)</span>
+            </form>
+          </section>
+
+          <section>
+            <h2>Period N</h2>
+            <form>
+              <input  id="period_n"  type="text"   autocomplete="off" placeholder="days, (default: 1 day)" ><span>→(check)</span>
+            </form>
+          </section>
+
+          <section>
+            <h2>Creator's Fee Size</h2>
+            <form>
+              <input  id="creator_fee_size"  type="text"   autocomplete="off" disabled placeholder="%, (default: 5%)"><span>→(check)</span>
+            </form>
+          </section>
+
+          <section>
+            <h2>TOP-10 Reward Size</h2>
+            <form>
+              <input  id="top10_reward_size"  type="text"   autocomplete="off" disabled placeholder="CHRT, (default: 100000 CHRT)"><span>→(check)</span>
+            </form>
+          </section>
+
+          <section>
+            <h2>CHRT Limit No Fee</h2>
+            <form>
+              <input  id="chrt_limit_no_fee"  type="text"   autocomplete="off" disabled placeholder="CHRT, (default: 100000 CHRT)"><span>→(check)</span>
+            </form>
+          </section>
+
+          <section>
+            <h2>CHRT Limit Hard Cap</h2>
+            <form>
+              <input  id="chrt_limit_hard_cap"  type="text"   autocomplete="off" disabled placeholder="CHRT, (default: 100000 CHRT)"><span>→(check)</span>
+            </form>
+          </section>
+                        
+          <script src="main.ts"></script>
+    </main>
+  </body>
+</html>
